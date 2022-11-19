@@ -11,20 +11,20 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{9BE1AD7E-BF34-4CB1-B8B5-B501B6673DB3}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{F6E15D8A-2D0B-4621-A762-DA069915CD1D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:refId="Package\Tarea Flujo de datos DIM"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
       DTS:DTSID="{9492013B-753E-42AC-9BBC-DF3E832D7DD5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:ObjectName="Tarea Flujo de datos DIM"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -32,7 +32,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET"
+              refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -67,7 +67,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Connections[IDbConnection]"
                   connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
                   description="Administrador de conexiones administrado"
@@ -75,99 +75,99 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="nombre"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[appaterno]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="appaterno"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[dia_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[dia_nac]"
                       cachedDataType="i4"
                       cachedName="dia_nac"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[mes_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[mes_nac]"
                       cachedDataType="i4"
                       cachedName="mes_nac"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[anio_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[anio_nac]"
                       cachedDataType="i4"
                       cachedName="anio_nac"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[estado_civil]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[estado_civil]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="estado_civil"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado_civil]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado_civil]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[cliente_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[cliente_id]"
                       cachedDataType="i4"
                       cachedName="cliente_id"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[apmaterno]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="apmaterno"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
                       dataType="i4"
                       name="id_cliente" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
                       dataType="wstr"
                       length="255"
                       name="appaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
                       dataType="wstr"
                       length="255"
                       name="appmaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_nac]"
                       dataType="i4"
                       name="dia_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_nac]"
                       dataType="i4"
                       name="mes_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_nac]"
                       dataType="i4"
                       name="anio_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado_civil]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado_civil]"
                       dataType="wstr"
                       length="255"
                       name="estado_civil" />
@@ -176,22 +176,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -200,7 +200,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET 1"
+              refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -235,7 +235,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Connections[IDbConnection]"
                   connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
                   description="Administrador de conexiones administrado"
@@ -243,109 +243,109 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="nombre"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[appaterno]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="appaterno"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[dia_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[dia_contrato]"
                       cachedDataType="i4"
                       cachedName="dia_contrato"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[mes_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[mes_contrato]"
                       cachedDataType="i4"
                       cachedName="mes_contrato"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[anio_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[anio_contrato]"
                       cachedDataType="i4"
                       cachedName="anio_contrato"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[sueldo_base]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[sueldo_base]"
                       cachedDataType="i4"
                       cachedName="sueldo_base"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[cargo]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[cargo]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="cargo"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[empleado_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[empleado_id]"
                       cachedDataType="i4"
                       cachedName="empleado_id"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].Columns[apmaterno]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="apmaterno"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
                       dataType="i4"
                       name="id_empleado" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
                       dataType="wstr"
                       length="255"
                       name="appaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[appmaterno]"
                       dataType="wstr"
                       length="255"
                       name="appmaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[dia_contrato]"
                       dataType="i4"
                       name="dia_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[mes_contrato]"
                       dataType="i4"
                       name="mes_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[anio_contrato]"
                       dataType="i4"
                       name="anio_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
                       dataType="i4"
                       name="sueldo_base" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo]"
                       dataType="wstr"
                       length="255"
                       name="cargo" />
@@ -354,22 +354,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -378,7 +378,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET 2"
+              refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -413,7 +413,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Connections[IDbConnection]"
                   connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
                   description="Administrador de conexiones administrado"
@@ -421,45 +421,45 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[sucursal]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="sucursal"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[sucursal]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[sucursal]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[comuna]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[comuna]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="comuna"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[comuna]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[comuna]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[sucursal_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].Columns[sucursal_id]"
                       cachedDataType="i4"
                       cachedName="sucursal_id"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
                       dataType="i4"
                       name="id_sucursal" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[sucursal]"
                       dataType="wstr"
                       length="255"
                       name="sucursal" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[comuna]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET].ExternalColumns[comuna]"
                       dataType="wstr"
                       length="255"
                       name="comuna" />
@@ -468,22 +468,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -492,7 +492,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET 3"
+              refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -527,7 +527,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Connections[IDbConnection]"
                   connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
                   description="Administrador de conexiones administrado"
@@ -535,55 +535,55 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="nombre"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[precio]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[precio]"
                       cachedDataType="i4"
                       cachedName="precio"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[categoria]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[categoria]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="categoria"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[categoria]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[categoria]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[producto_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].Columns[producto_id]"
                       cachedDataType="i4"
                       cachedName="producto_id"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
                       dataType="i4"
                       name="id_producto" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio]"
                       dataType="i4"
                       name="precio" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[categoria]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET].ExternalColumns[categoria]"
                       dataType="wstr"
                       length="255"
                       name="categoria" />
@@ -592,22 +592,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -616,7 +616,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET 4"
+              refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -651,7 +651,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Connections[IDbConnection]"
                   connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
                   description="Administrador de conexiones administrado"
@@ -659,48 +659,48 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[cantidad]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[cantidad]"
                       cachedDataType="i4"
                       cachedName="cantidad"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[cantidad]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[cantidad]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[precio_unitario]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[precio_unitario]"
                       cachedDataType="i4"
                       cachedName="precio_unitario"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio_unitario]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio_unitario]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[descuento]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].Columns[descuento]"
                       cachedDataType="numeric"
                       cachedName="descuento"
                       cachedPrecision="5"
                       cachedScale="2"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[descuento]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]" />
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[descuento]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_det_venta]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_det_venta]"
                       dataType="i4"
                       name="id_det_venta" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[cantidad]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[cantidad]"
                       dataType="i4"
                       name="cantidad" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio_unitario]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[precio_unitario]"
                       dataType="i4"
                       name="precio_unitario" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[descuento]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET].ExternalColumns[descuento]"
                       dataType="numeric"
                       name="descuento"
                       precision="5"
@@ -710,22 +710,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -734,7 +734,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE"
+              refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
@@ -774,7 +774,7 @@ FROM            clientes</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Connections[IDbConnection]"
                   connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
                   description="Administrador de conexiones administrado"
@@ -782,185 +782,185 @@ FROM            clientes</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
                       name="cliente_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       name="nombre"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
                       name="appaterno"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
                       name="apmaterno"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[dia_nac]"
                       name="dia_nac"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[mes_nac]"
                       name="mes_nac"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_nac]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[anio_nac]"
                       name="anio_nac"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[estado_civil]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[estado_civil]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].Columns[estado_civil]"
                       name="estado_civil"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
                       dataType="i4"
                       name="cliente_id" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
                       dataType="wstr"
                       length="255"
                       name="appaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
                       dataType="wstr"
                       length="255"
                       name="apmaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_nac]"
                       dataType="i4"
                       name="dia_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_nac]"
                       dataType="i4"
                       name="mes_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_nac]"
                       dataType="i4"
                       name="anio_nac" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[estado_civil]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET].ExternalColumns[estado_civil]"
                       dataType="wstr"
                       length="255"
                       name="estado_civil" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
                       name="cliente_id" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       name="nombre" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
                       name="appaterno" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
                       name="apmaterno" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[dia_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[dia_nac]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[dia_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[dia_nac]"
                       name="dia_nac" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[mes_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[mes_nac]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[mes_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[mes_nac]"
                       name="mes_nac" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[anio_nac]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[anio_nac]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[anio_nac]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[anio_nac]"
                       name="anio_nac" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[estado_civil]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[estado_civil]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[estado_civil]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[estado_civil]"
                       name="estado_civil" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -969,7 +969,7 @@ FROM            clientes</property>
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA"
+              refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
@@ -1009,7 +1009,7 @@ FROM            detalle_ventas</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Connections[IDbConnection]"
                   connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
                   description="Administrador de conexiones administrado"
@@ -1017,34 +1017,34 @@ FROM            detalle_ventas</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[cantidad]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[cantidad]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[cantidad]"
                       name="cantidad"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[precio_unitario]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[precio_unitario]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[precio_unitario]"
                       name="precio_unitario"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[descuento]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[descuento]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].Columns[descuento]"
                       name="descuento"
                       precision="5"
                       scale="2"
@@ -1053,15 +1053,15 @@ FROM            detalle_ventas</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[cantidad]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[cantidad]"
                       dataType="i4"
                       name="cantidad" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[precio_unitario]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[precio_unitario]"
                       dataType="i4"
                       name="precio_unitario" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[descuento]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET].ExternalColumns[descuento]"
                       dataType="numeric"
                       name="descuento"
                       precision="5"
@@ -1069,37 +1069,37 @@ FROM            detalle_ventas</property>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[cantidad]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[cantidad]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[cantidad]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[cantidad]"
                       name="cantidad" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[precio_unitario]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[precio_unitario]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[precio_unitario]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[precio_unitario]"
                       name="precio_unitario" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[descuento]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[descuento]"
                       dataType="numeric"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[descuento]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[descuento]"
                       name="descuento"
                       precision="5"
                       scale="2" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1108,7 +1108,7 @@ FROM            detalle_ventas</property>
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO"
+              refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
@@ -1150,7 +1150,7 @@ FROM            cargos INNER JOIN
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Connections[IDbConnection]"
                   connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
                   description="Administrador de conexiones administrado"
@@ -1158,203 +1158,203 @@ FROM            cargos INNER JOIN
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
                       name="empleado_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       name="nombre"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[appaterno]"
                       name="appaterno"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[apmaterno]"
                       name="apmaterno"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[dia_contrato]"
                       name="dia_contrato"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[mes_contrato]"
                       name="mes_contrato"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_contrato]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[anio_contrato]"
                       name="anio_contrato"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[sueldo_base]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[sueldo_base]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[sueldo_base]"
                       name="sueldo_base"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[cargo]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[cargo]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].Columns[cargo]"
                       name="cargo"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
                       dataType="i4"
                       name="empleado_id" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[appaterno]"
                       dataType="wstr"
                       length="255"
                       name="appaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[apmaterno]"
                       dataType="wstr"
                       length="255"
                       name="apmaterno" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[dia_contrato]"
                       dataType="i4"
                       name="dia_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[mes_contrato]"
                       dataType="i4"
                       name="mes_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[anio_contrato]"
                       dataType="i4"
                       name="anio_contrato" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[sueldo_base]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[sueldo_base]"
                       dataType="i4"
                       name="sueldo_base" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[cargo]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET].ExternalColumns[cargo]"
                       dataType="wstr"
                       length="255"
                       name="cargo" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
                       name="empleado_id" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       name="nombre" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[appaterno]"
                       name="appaterno" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[apmaterno]"
                       name="apmaterno" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[dia_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[dia_contrato]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[dia_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[dia_contrato]"
                       name="dia_contrato" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[mes_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[mes_contrato]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[mes_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[mes_contrato]"
                       name="mes_contrato" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[anio_contrato]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[anio_contrato]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[anio_contrato]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[anio_contrato]"
                       name="anio_contrato" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[sueldo_base]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[sueldo_base]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[sueldo_base]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[sueldo_base]"
                       name="sueldo_base" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[cargo]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[cargo]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[cargo]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[cargo]"
                       name="cargo" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1363,7 +1363,7 @@ FROM            cargos INNER JOIN
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO"
+              refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
@@ -1404,7 +1404,7 @@ FROM            categorias INNER JOIN
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Connections[IDbConnection]"
                   connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
                   description="Administrador de conexiones administrado"
@@ -1412,107 +1412,107 @@ FROM            categorias INNER JOIN
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[nombre]"
                       name="nombre"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
                       name="producto_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[precio]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[precio]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[precio]"
                       name="precio"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[categoria]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[categoria]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].Columns[categoria]"
                       name="categoria"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
                       dataType="wstr"
                       length="255"
                       name="nombre" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
                       dataType="i4"
                       name="producto_id" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[precio]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[precio]"
                       dataType="i4"
                       name="precio" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[categoria]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET].ExternalColumns[categoria]"
                       dataType="wstr"
                       length="255"
                       name="categoria" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
                       name="nombre" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
                       name="producto_id" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[precio]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[precio]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[precio]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[precio]"
                       name="precio" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[categoria]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[categoria]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[categoria]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[categoria]"
                       name="categoria" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1521,7 +1521,7 @@ FROM            categorias INNER JOIN
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL"
+              refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
@@ -1562,7 +1562,7 @@ FROM            sucursales INNER JOIN
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Connections[IDbConnection]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Connections[IDbConnection]"
                   connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
                   description="Administrador de conexiones administrado"
@@ -1570,89 +1570,89 @@ FROM            sucursales INNER JOIN
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
                       name="sucursal_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[sucursal]"
                       name="sucursal"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[comuna]"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[comuna]"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].Columns[comuna]"
                       name="comuna"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
                       dataType="i4"
                       name="sucursal_id" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal]"
                       dataType="wstr"
                       length="255"
                       name="sucursal" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[comuna]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET].ExternalColumns[comuna]"
                       dataType="wstr"
                       length="255"
                       name="comuna" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
                       name="sucursal_id" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[sucursal]"
                       name="sucursal" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[comuna]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[comuna]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[comuna]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[comuna]"
                       name="comuna" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1663,30 +1663,391 @@ FROM            sucursales INNER JOIN
           </components>
           <paths>
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET]"
+              endId="Package\Tarea Flujo de datos DIM\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE.Outputs[Salida de origen de ADO NET]" />
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET1]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET1]"
+              endId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO.Outputs[Salida de origen de ADO NET]" />
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET2]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET2]"
+              endId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL.Outputs[Salida de origen de ADO NET]" />
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET3]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET3]"
+              endId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO.Outputs[Salida de origen de ADO NET]" />
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET4]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET4]"
+              endId="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos FACT"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{C959E7B0-E25C-4C32-AB4C-4F1DE0C11FAE}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos FACT"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."FACT_VENTA"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="{909A45F2-0411-4FC4-9F0B-3DEDFEE9EB7C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.albarranDW]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[costo_total]"
+                      cachedDataType="i4"
+                      cachedName="costo_total"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[costo_total]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[costo_total]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[producto_id]"
+                      cachedDataType="i4"
+                      cachedName="producto_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[producto_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[sucursal_id]"
+                      cachedDataType="i4"
+                      cachedName="sucursal_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[empleado_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[cliente_id]"
+                      cachedDataType="i4"
+                      cachedName="cliente_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[cliente_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[venta_id]"
+                      cachedDataType="i4"
+                      cachedName="venta_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_det_venta]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[venta_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_producto]"
+                      dataType="i4"
+                      name="id_producto" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sucursal]"
+                      dataType="i4"
+                      name="id_sucursal" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_empleado]"
+                      dataType="i4"
+                      name="id_empleado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_cliente]"
+                      dataType="i4"
+                      name="id_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_det_venta]"
+                      dataType="i4"
+                      name="id_det_venta" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[costo_total]"
+                      dataType="i4"
+                      name="costo_total" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos FACT\Poblar FACT"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Poblar FACT"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        clientes.cliente_id, empleados.empleado_id, productos.producto_id, sucursales.sucursal_id, ventas.venta_id, detalle_ventas.precio_unitario * detalle_ventas.cantidad AS costo_total
+FROM            productos INNER JOIN
+                         detalle_ventas ON productos.producto_id = detalle_ventas.producto_id INNER JOIN
+                         ventas ON detalle_ventas.venta_id = ventas.venta_id INNER JOIN
+                         empleados ON ventas.vendedor_id = empleados.empleado_id INNER JOIN
+                         clientes ON ventas.cliente_id = clientes.cliente_id INNER JOIN
+                         sucursales ON ventas.sucursal_id = sucursales.sucursal_id</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Connections[IDbConnection]"
+                  connectionManagerID="{68C713E9-4222-4DD9-93D4-00F581CEBDD7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-FO8HSMK.Albarran]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[cliente_id]"
+                      name="cliente_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[empleado_id]"
+                      name="empleado_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[producto_id]"
+                      name="producto_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[sucursal_id]"
+                      name="sucursal_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[venta_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[venta_id]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[venta_id]"
+                      name="venta_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[costo_total]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[costo_total]"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].Columns[costo_total]"
+                      name="costo_total"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[cliente_id]"
+                      dataType="i4"
+                      name="cliente_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[empleado_id]"
+                      dataType="i4"
+                      name="empleado_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[producto_id]"
+                      dataType="i4"
+                      name="producto_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[sucursal_id]"
+                      dataType="i4"
+                      name="sucursal_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[venta_id]"
+                      dataType="i4"
+                      name="venta_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET].ExternalColumns[costo_total]"
+                      dataType="i4"
+                      name="costo_total" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[cliente_id]"
+                      name="cliente_id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[empleado_id]"
+                      name="empleado_id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[producto_id]"
+                      name="producto_id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[sucursal_id]"
+                      name="sucursal_id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[venta_id]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[venta_id]"
+                      name="venta_id" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[costo_total]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[costo_total]"
+                      name="costo_total" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos FACT.Paths[Salida de origen de ADO NET]"
+              endId="Package\Tarea Flujo de datos FACT\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Tarea Flujo de datos FACT\Poblar FACT.Outputs[Salida de origen de ADO NET]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1705,57 +2066,63 @@ FROM            sucursales INNER JOIN
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="176,42"
-          Id="Package\Tarea Flujo de datos"
+          Size="199,42"
+          Id="Package\Tarea Flujo de datos DIM"
           TopLeft="230,140" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Tarea Flujo de datos FACT"
+          TopLeft="474,139" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Tarea Flujo de datos">
+    design-time-name="Package\Tarea Flujo de datos DIM">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="178,42"
-          Id="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE"
-          TopLeft="50,138" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET"
-          TopLeft="56,222" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
-          TopLeft="141.5,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="190,42"
-          Id="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO"
+          Id="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO"
           TopLeft="270,137" />
         <NodeLayout
           Size="186,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET 1"
+          Id="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3"
+          TopLeft="734,224" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1"
           TopLeft="271,226" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL"
+          TopLeft="508,139" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE"
+          TopLeft="50,138" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4"
+          TopLeft="957,226" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2"
+          TopLeft="508,224" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO"
+          TopLeft="733,140" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos DIM\Destino de ADO NET"
+          TopLeft="45,222" />
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA"
+          TopLeft="956,140" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET1]"
+          Id="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET1]"
           TopLeft="364.5,179">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1776,47 +2143,9 @@ FROM            sucursales INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL"
-          TopLeft="508,139" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET 2"
-          TopLeft="508,224" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET2]"
-          TopLeft="601.5,181">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="191,42"
-          Id="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO"
-          TopLeft="733,140" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET 3"
-          TopLeft="734,224" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET3]"
-          TopLeft="827.75,182">
+          Id="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET]"
+          TopLeft="136,180">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1836,16 +2165,8 @@ FROM            sucursales INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="194,42"
-          Id="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA"
-          TopLeft="956,140" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET 4"
-          TopLeft="957,226" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET4]"
+          Id="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET4]"
           TopLeft="1051.5,182">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1866,11 +2187,55 @@ FROM            sucursales INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET3]"
+          TopLeft="827.75,182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos DIM.Paths[Salida de origen de ADO NET2]"
+          TopLeft="601.5,181">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Poblar DIM_CLIENTE">
+    design-time-name="Package\Tarea Flujo de datos DIM\Poblar DIM_EMPLEADO">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1878,7 +2243,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET">
+    design-time-name="Package\Tarea Flujo de datos DIM\Destino de ADO NET 3">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1886,7 +2251,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Poblar DIM_EMPLEADO">
+    design-time-name="Package\Tarea Flujo de datos DIM\Destino de ADO NET 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1894,7 +2259,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET 1">
+    design-time-name="Package\Tarea Flujo de datos DIM\Poblar DIM_SUCURSAL">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1902,7 +2267,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Poblar DIM_SUCURSAL">
+    design-time-name="Package\Tarea Flujo de datos DIM\Poblar DIM_CLIENTE">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1910,7 +2275,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET 2">
+    design-time-name="Package\Tarea Flujo de datos DIM\Destino de ADO NET 4">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1918,7 +2283,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Poblar DIM_PRODUCTO">
+    design-time-name="Package\Tarea Flujo de datos DIM\Destino de ADO NET 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1926,7 +2291,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET 3">
+    design-time-name="Package\Tarea Flujo de datos DIM\Poblar DIM_PRODUCTO">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1934,7 +2299,7 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Poblar DIM_DET_VENTA">
+    design-time-name="Package\Tarea Flujo de datos DIM\Destino de ADO NET">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1942,7 +2307,61 @@ FROM            sucursales INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET 4">
+    design-time-name="Package\Tarea Flujo de datos DIM\Poblar DIM_DET_VENTA">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos FACT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Tarea Flujo de datos FACT\Poblar FACT"
+          TopLeft="225,80" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos FACT\Destino de ADO NET"
+          TopLeft="202,196" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos FACT.Paths[Salida de origen de ADO NET]"
+          TopLeft="291.5,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos FACT\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos FACT\Poblar FACT">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
